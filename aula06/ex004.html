@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var nome = prompt('Qual é o seu nome?')
+        var salario = parseFloat(prompt('Qual é o seu salário?'))
+
+        document.write(`Seu nome tem ${nome.length} letra<br>`)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}<br>`)
+
+        document.write(`O valor de pi é ${Math.PI.toFixed(2).replace('.',',')}<br>`)
+
+        document.write(`O salário é ${salario.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
