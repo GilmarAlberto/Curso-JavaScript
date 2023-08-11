@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagens/g4.png" type="image/x-icon">
+    <title>Desafio009</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        /*
+        Exercício de Escolha de Lanche: Crie um programa que apresente opções de lanches ao usuário e permita que ele escolha. Use uma declaração switch para mostrar a mensagem correspondente ao lanche escolhido.
+        */
+
+        let opcao = parseInt(prompt('Escolha um lanche (1 - Hambúrguer, 2 - Pizza, 3 - Sanduíche, 4 - Salada):'));
+    
+        let mensagem;
+  
+        switch (opcao) {
+            case 1:
+                mensagem = 'Você escolheu Hambúrguer!';
+                break;
+            case 2:
+                mensagem = 'Você escolheu Pizza!';
+                break;
+            case 3:
+                mensagem = 'Você escolheu Sanduíche!';
+                break;
+            case 4:
+                mensagem = 'Você escolheu Salada!';
+                break;
+            default:
+                mensagem = 'Opção inválida!';
+                break;
+        }
+        alert(mensagem);
+        
+    </script>
+</body>
+</html>
