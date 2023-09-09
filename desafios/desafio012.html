@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio012</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Digiter um valor: "));
+        let fat = 1, i = 1;
+
+        if(num < 0){
+            alert("O fatorial de um numero negativo nao e definido.");
+        } else if(num===0){
+            alert(`O fatorial de zero é 1!`)
+        }
+        else{
+
+            while (i <= num) {
+                fat *= i; // Multiplica 'fat' pelo valor de 'i' a cada iteração.
+                i++;
+            }
+            alert(`O fatorial de ${num} é ${fat}`);
+
+    }
+
+
+
+    </script>
+</body>
+</html>
